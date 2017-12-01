@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SurfApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap.min.css">
+    <nav class="navbar navbar-light bg-faded">
+  <form class="form-inline">
+    <button class="btn btn-outline-success" type="button">Home</button>
+    <button class="btn btn-outline-success" type="button">Beginner</button>
+    <button class="btn btn-outline-success" type="button">Intermediate</button>
+    <button class="btn btn-outline-success" type="button">Advanced</button>
+    <button class="btn btn-outline-success" type="button">Random stuff!</button>
+
+  </form>
+
+
+</nav>
+    <%= yield %>
+  </body>
+</html>
