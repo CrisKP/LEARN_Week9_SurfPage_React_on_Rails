@@ -8,32 +8,7 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import Joke from 'components/Joke'
-import Intro from 'components/intro'
+import SurfPage from 'pages/surfPage'
 import WebpackerReact from 'webpacker-react'
-import {
-  Pageheader,
-  Table
 
-} from 'react-bootstrap'
-
-WebpackerReact.setup({Joke})
-WebpackerReact.setup({Intro})
-
-import React, { Component } from 'react';
-import Header from './Header'
-
-
-// copy/pasted this for future use cuz we think its important?
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <Header />
-        </div>
-      </div>
-    );
-  }
-}
-
-export default App
+WebpackerReact.setup({SurfPage, Joke})

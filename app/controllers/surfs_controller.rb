@@ -1,9 +1,9 @@
 class SurfsController < ApplicationController
   def intro
-    render react_component: 'Intro'
   end
 
   def beginner
+    # @locations = Location.where(level: => "beginner")
   end
 
   def intermediate
